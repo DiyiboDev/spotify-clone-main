@@ -1,0 +1,49 @@
+body[data-device="desktop"] {
+  /* Estilos para el botón que contiene el tooltip */
+  .tooltip {
+    position: relative; /* Para que el tooltip se posicione de forma absoluta respecto a este contenedor */
+    display: inline-block; /* Asegura que el botón se comporte de forma correcta */
+  
+    &:hover::after {
+      content: attr(data-tooltip);
+      position: absolute;
+      bottom: 150%;
+      transform: translateX(-50%);
+      white-space: nowrap;
+      background-color: #333;
+      padding: 5px 10px;
+      border-radius: 4px;
+      font-size: .9rem;
+      color: #fff;
+      z-index: 500;
+      /* TODO: FIX THIS ERROR THE TOOLTIP MESSAGE IS BEHIND THE CLOSE BUTTON */
+    }
+  }
+
+  .tooltip--left:hover::after {
+    left: -50%;
+  }
+
+  .tooltip--top-left:hover::after {
+    left: -80px;
+    bottom: 130%;
+  }
+
+  .tooltip--top-mini:hover::after {
+    bottom: 130%;
+  }
+
+  .tooltip--bottom:hover::after {
+    bottom: -150%;
+  }
+
+  .tooltip--bottom-mini:hover::after {
+    bottom: -100%;
+  }
+}
+
+@media ( width < 1024px ) {
+  .tooltip--right:hover::after {
+      left: 200%;
+  }
+}

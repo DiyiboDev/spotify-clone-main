@@ -1,0 +1,164 @@
+.search__input:focus ~ .modal__input {
+  visibility: visible;
+}
+.modal__input {
+  visibility: hidden;
+  position: absolute;
+  width: 100%;
+  max-height: 70vh;
+  overflow-y: auto;
+  scrollbar-width: none;
+  background-color: #212121;
+  padding: 1em .5em;
+  display: flex;
+  flex-direction: column;
+  border-radius: .5em;
+
+  .track-info__title {
+    font-size: 1.05rem;
+  }
+  .track-info__artist {
+    font-size: .9rem;
+  }
+}
+
+.modal__input-item {
+  display: grid;
+  grid-template-columns: auto 1em;
+  align-items: center;
+  justify-content: space-between;
+  padding-inline: .5em;
+  padding-block: .7em;
+  gap: 2em;
+  border-radius: .5em;
+  cursor: pointer;
+  justify-items: start;
+
+  &:hover {
+    background-color: rgba(255, 255, 255, 0.11);
+  }
+
+  &:active {
+    background-color: rgba(255, 255, 255, 0.2);
+  }
+}
+
+.modal__input-info{
+  display: grid;
+  gap: .5em;
+  grid-template-columns: 2em auto;
+  gap: 1em;
+}
+.modal__input-picture {
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: .5em;
+}
+.modal__input-close {
+  color: #928c8c;
+  width: 1em;
+  height: 1em;
+}
+.modal__input-close:hover {
+  scale: 1.01;
+  color: #fff;
+}
+.modal__input-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+
+/* MODAL CREATE */
+.modal-create__overlay {
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0,0,0,.7);
+  z-index: 400;
+  display: none;
+}
+.modal-create__overlay.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .modal-create__content {
+    display: flex;
+  }
+}
+.modal-create__content {
+  flex-direction: column;
+  gap: 1em;
+  padding: 1em 2em;
+  width: 90%;
+  max-width: 500px;
+  background-color: #212121;
+  border-radius: .5em;
+  box-shadow: 1px 1px 10px #1f1e1e91;
+}
+.modal-create__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.modal-create__title {
+  font-size: 1.7rem;
+  font-weight: 700;
+}
+.modal-create__info {
+  display: flex;
+  gap: 1em;
+}
+.modal-create__picture {
+  width: 24em;
+  height: 12em;
+}
+.modal-create__inputs {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+.modal-create__input {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1em;
+}
+.modal-create__input input, 
+.modal-create__input textarea {
+  padding: .8em 1em;
+  border-radius: .5em;
+  border: none;
+  background-color: #333333;
+  font-weight: 500;
+  font-size: .8rem;
+  color: #fff;
+  width: 100%;
+
+  &:focus {
+    outline: 1px solid #535353;
+  }
+}
+.modal-create__input textarea {
+  height: 100%;
+  resize: none;
+}
+.modal-create__btn-save {
+  background-color: #fff;
+  color: #212121;
+  padding: 1em 2em;
+  border-radius: 2em;
+  font-weight: 700;
+  align-self: flex-end;
+
+  &:hover {
+    scale: 1.05;
+    background-color: rgba(255, 255, 255, 0.9);
+  }
+  &:active {
+    background-color: rgba(255, 255, 255, 0.6);
+    scale: 1;
+  }
+}

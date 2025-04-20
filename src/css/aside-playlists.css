@@ -1,0 +1,97 @@
+.aside-playlists {
+  display: none;
+}
+
+@media ( width >= 1024px ) {
+  .aside-playlists {
+    display: flex;
+    flex-direction: column;
+    grid-area: aside-playlists;
+    background-color: #09090b;
+    width: 15em;
+
+    .track-info {
+      gap: .5em;
+    }
+    .track-info__image {
+      width: 2.5em;
+      height: 2.5em;
+    }
+    .track-info__title:hover, .track-info__artist:hover {
+      text-decoration: none;
+    }
+  } 
+  .playlists {
+    display: flex;
+    flex-direction: column;
+    gap: .5em;
+    height: 100%;
+  }
+  .playlists__songs {
+    height: 100%;
+  }
+  .playlists__actions, .playlists__songs, .playlists-create {
+    display: flex;
+    flex-direction: column;
+    padding: .5em;
+    background-color: #18181b;
+    border-radius: .5em;
+  }  
+  .playlists-create__button {
+    background-color: #262629;
+    display: block;
+    width: 100%;
+    padding: 1em;
+    border-radius: .5em;
+    font-weight: 700;
+    transition: background-color .3s ease;
+
+    &:hover {
+      background-color: #262629;
+    }
+    &:active {
+      background-color: #262629;
+      outline: 1px solid #fff;
+    }
+    &:focus {
+      outline: 1px solid #fff;
+    }
+  }
+  .playlists__actions {
+    gap: .8em;
+    padding: 1em;
+  }
+  .playlists__action {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    color: #696868;
+    cursor: pointer;
+    font-size: .9rem;
+    transition: all .2s ease-in-out;
+  }
+  .playlists__action--active {
+    color: #1ED760;
+  }
+  .playlists__link {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+    color: #94949b;
+    font-weight: 600;
+
+    &:hover {
+      scale: unset;
+      color: #fff;
+    }
+  }
+  .playlist__song {
+    padding: .6em .3em;
+    cursor: pointer;
+    transition: background-color .2s ease-in-out;
+
+    &:hover {
+      scale: unset;
+    }
+  }
+}

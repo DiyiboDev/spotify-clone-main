@@ -1,0 +1,69 @@
+@import url('./css/index.css');
+
+:root {
+  /* Colors */
+  --text-white: #fff;
+  --primary: #121212;
+  --black: #000;
+
+  /* Fonts */
+  --font-primary: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--black);
+  color: var(--text-white);
+  overflow: hidden;
+}
+input {
+  width: 100%;
+}
+
+img {
+  display: block;
+  height: 100%;
+  width: 100%;
+  border-radius: .5em;
+}
+svg {
+  display: block;
+}
+
+label {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: .5em;
+}
+
+button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+}

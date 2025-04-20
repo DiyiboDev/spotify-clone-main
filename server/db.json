@@ -1,0 +1,444 @@
+{
+  "playlists": [
+  { 
+    "id": "arcane",
+    "playlistId": 1, 
+    "title": "Arcane League of Legends Season 1 and Season 2", 
+    "color": "#003060", 
+    "cover": "https://i.scdn.co/image/ab67616d00001e024aaf2413384c1efcc38353c6", 
+    "coverPlaylist": "https://i.scdn.co/image/ab67616d00001e024aaf2413384c1efcc38353c6", 
+    "artists": ["Arcane", "League of Legends"],
+    "songs": [
+      { 
+        "id": "enemy-arcane", 
+        "playlistId": 1, 
+        "cover": "https://i.scdn.co/image/ab67616d00001e0237706d3b594fa52d5a1ef026", "title": "Enemy",
+        "coverPlaylist": "https://i.scdn.co/image/ab67616d00001e024aaf2413384c1efcc38353c6",
+        "artists": ["Imagine Dragons", "JID"], 
+        "album": "Arcane League of Legends Season 1 and Season 2" }
+      ,{
+        "id": "guns-for-hire",
+        "playlistId": "arcane",
+        "cover": "https://i.scdn.co/image/ab67616d00001e028a4aa9f5c68f7f8aed473671",
+        "title": "Guns for hire",
+        "color": "#303038FF",
+        "artists": [
+          "Wookid",
+          "Arcane",
+          "League of Legends"
+        ]
+      },
+      {
+        "id": "to-ashes-and-blood",
+        "playlistId": "arcane",
+        "cover": "https://i.scdn.co/image/ab67616d00001e024aaf2413384c1efcc38353c6",
+        "coverPlaylist": "https://i.scdn.co/image/ab67616d00001e024aaf2413384c1efcc38353c6",
+        "title": "To ashes and blood",
+        "artists": [
+          "Wookid",
+          "Arcane",
+          "League of Legends"
+        ]
+      },
+      {
+        "id": "collaboration",
+        "playlistId": "arcane",
+        "cover": "https://i.scdn.co/image/ab67616d0000b273cfe7a215980d904a81ba9aa7",
+        "coverPlaylist": "https://i.scdn.co/image/ab67616d00001e024aaf2413384c1efcc38353c6",
+        "title": "Collaboration",
+        "artists": [
+          "Arcane"
+        ]
+      },
+      {
+        "id": "bite-marks",
+        "playlistId": "arcane",
+        "cover": "https://i.scdn.co/image/ab67616d00001e02aa6b1a8d8438ffded6831646",
+        "coverPlaylist": "https://i.scdn.co/image/ab67616d00001e024aaf2413384c1efcc38353c6",
+        "title": "Bite Marks",
+        "artists": [
+          "Leagues of Legends",
+          "TEYA"
+        ]
+      },
+      {
+        "id": "what-have-they-done-to-us",
+        "playlistId": "arcane",
+        "cover": "https://i.scdn.co/image/ab67616d00001e02c207280ef9ac378494b08237",
+        "title": "What Have They Done To Us (ft. Sasha Alex Sloan) (from the series Arcane League of Legends)",
+        "artists": [
+          "Arcane"
+        ]
+      },
+      {
+        "id": "what-could-have-been",
+        "playlistId": "arcane",
+        "cover": "https://i.scdn.co/image/ab67616d0000b27390d1dd89316f336262258965",
+        "title": "What Could Have Been",
+        "artists": [
+          "Arcane",
+          "Sting",
+          "Ray Chen"
+        ]
+      },
+      {
+        "id": "ishas-song",
+        "playlistId": "arcane",
+        "cover": "https://i.scdn.co/image/ab67616d00001e024aaf2413384c1efcc38353c6",
+        "coverPlaylist": "https://i.scdn.co/image/ab67616d00001e024aaf2413384c1efcc38353c6",
+        "title": "这样很好 (Isha's Song) (from the series Arcane League of Legends)",
+        "artists": [
+          "Eason Chan",
+          "Arcane",
+          "League of Legends"
+        ]
+      }
+    ]
+  },
+  { 
+    "id": "image-dragons-envolve",
+    "playlistId": 3, 
+    "title": "Imagine Dragons: Evolve", 
+    "color": "rgb(100 13 12 / 70%)", 
+    "coverPlaylist": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84274a231dc93ab8f2010e6513", 
+    "cover": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84274a231dc93ab8f2010e6513", 
+    "artists": ["Imagine Dragons"],
+    "songs": [
+      {
+        "id": "believer",
+        "playlistId": "image-dragons",
+        "cover": "https://i.scdn.co/image/ab67616d00001e025675e83f707f1d7271e5cf8a",
+        "title": "Believer",
+        "artists": [
+          "Image Dragons"
+        ]
+      },
+      {
+        "id": "demons",
+        "playlistId": "image-dragons",
+        "cover": "https://i.scdn.co/image/ab67616d00001e02407bd04707c463bbb3410737",
+        "title": "Demons",
+        "artists": [
+          "Image Dragons"
+        ]
+      },
+      {
+        "id": "warriors",
+        "playlistId": "image-dragons",
+        "cover": "https://i.scdn.co/image/ab67616d0000b273fc4fd5caca9f1dc4a3b0460a",
+        "title": "Warriors",
+        "artists": [
+          "Image Dragons"
+        ]
+      },
+      {
+        "id": "enemy-image-dragons",
+        "playlistId": "image-dragons",
+        "cover": "https://i.scdn.co/image/ab67616d00001e02fc915b69600dce2991a61f13",
+        "title": "Enemy (with JID) - from the series Arcane League of Legends",
+        "artists": [
+          "Image Dragons"
+        ]
+      },
+      {
+        "id": "im-so-sorry",
+        "playlistId": "image-dragons",
+        "cover": "https://i.scdn.co/image/ab67616d00001e02fc4fd5caca9f1dc4a3b0460a",
+        "title": "I'm So Sorry",
+        "artists": [
+          "Image Dragons"
+        ]
+      },
+      {
+        "id": "bad-liar",
+        "playlistId": "image-dragons",
+        "cover": "https://i.scdn.co/image/ab67616d00001e02da6f73a25f4c79d0e6b4a8bd",
+        "title": "Bad Liar",
+        "artists": [
+          "Image Dragons"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "sounds",
+    "playlistId": "sounds",
+    "color": "#981028",
+    "cover": "https://i.scdn.co/image/ab67616100005174bf023e4862d01765bfc9f5b7",
+    "coverPlaylist": "https://i.scdn.co/image/ab67616100005174bf023e4862d01765bfc9f5b7",
+    "title": "Sounds and Melodies",
+    "artists": [
+      "Samuel Kim"
+    ],
+    "songs": [
+      {
+        "id": "evil-morty-theme",
+        "playlistId": "sounds",
+        "cover": "https://i.scdn.co/image/ab67616d00001e02a98eab99c60a344a8d00fff8",
+        "title": "Evil Morty Theme (For The Damaged Coda) (Epic Version) - Cover",
+        "artists": [
+          "Samuel Kim"
+        ]
+      },
+      {
+        "id": "lacrimosa",
+        "playlistId": "sounds",
+        "cover": "https://i.scdn.co/image/ab67616d0000b27363691140e578d00671fb54a2",
+        "title": "Lacrimosa",
+        "artists": [
+          "Samuel Kim"
+        ]
+      },
+      {
+        "id": "demos-slayer-epic-collection",
+        "playlistId": "sounds",
+        "cover": "https://i.scdn.co/image/ab67616d00001e0240a9f87d9c46fb52da9c1084",
+        "title": "Demon Slayer: Epic Collection (Cover)",
+        "artists": [
+          "Samuel Kim"
+        ]
+      },
+      {
+        "id": "i-really-want-to-stay-at-your-house",
+        "playlistId": "sounds",
+        "cover": "https://i.scdn.co/image/ab67616d0000b273760dca9422caf3556e9f69e6",
+        "title": "I Really Want to Stay at Your House",
+        "artists": [
+          "Samuel Kim"
+        ]
+      },
+      {
+        "id": "call-of-silence-piano-version",
+        "playlistId": "sounds",
+        "color": "#5078C8FF",
+        "cover": "https://i.scdn.co/image/ab67616d00001e02cba9a2588c769c73c21c20e6",
+        "title": "Call Of Silence (Attack on Titan Piano)",
+        "artists": [
+          "Aleta",
+          "Samuel Kim"
+        ]
+      }
+    ]
+  }  
+],
+  "tracks": [     
+    { 
+      "id": "enemy-arcane", 
+      "playlistId": "arcane", 
+      "cover": "https://i.scdn.co/image/ab67616d00001e0237706d3b594fa52d5a1ef026", 
+      "coverPlaylist": "https://i.scdn.co/image/ab67616d00001e024aaf2413384c1efcc38353c6",
+      "title": "Enemy", 
+      "artists": ["Imagine Dragons", "JID"], 
+      "album": "Arcane League of Legends Season 1 and Season 2", 
+      "color": "#F81808FF"
+    },
+    {
+      "id": "guns-for-hire",
+      "playlistId": "arcane",
+      "cover": "https://i.scdn.co/image/ab67616d00001e028a4aa9f5c68f7f8aed473671",
+      "coverPlaylist": "https://i.scdn.co/image/ab67616d00001e024aaf2413384c1efcc38353c6",
+      "title": "Guns for hire",
+      "color": "#303038FF",
+      "artists": [
+        "Wookid",
+        "Arcane",
+        "League of Legends"
+      ]
+    },
+    {
+      "id": "to-ashes-and-blood",
+      "playlistId": "arcane",
+      "color": "#003060",
+      "cover": "https://i.scdn.co/image/ab67616d00001e024aaf2413384c1efcc38353c6",
+      "coverPlaylist": "https://i.scdn.co/image/ab67616d00001e024aaf2413384c1efcc38353c6",
+      "title": "To ashes and blood",
+      "artists": [
+        "Wookid",
+        "Arcane",
+        "League of Legends"
+      ]
+    },
+    {
+      "id": "collaboration",
+      "playlistId": "arcane",
+      "color": "#0D3D00FF",
+      "cover": "https://i.scdn.co/image/ab67616d0000b273cfe7a215980d904a81ba9aa7",
+      "coverPlaylist": "https://i.scdn.co/image/ab67616d00001e024aaf2413384c1efcc38353c6",
+      "title": "Collaboration",
+      "artists": [
+        "Arcane"
+      ]
+    },
+    {
+      "id": "bite-marks",
+      "playlistId": "arcane",
+      "color": "#4E2B2BFF",
+      "cover": "https://i.scdn.co/image/ab67616d00001e02aa6b1a8d8438ffded6831646",
+      "coverPlaylist": "https://i.scdn.co/image/ab67616d00001e024aaf2413384c1efcc38353c6",
+      "title": "Bite Marks",
+      "artists": [
+        "Leagues of Legends",
+        "TEYA"
+      ]
+    },
+    {
+      "id": "what-have-they-done-to-us",
+      "playlistId": "arcane",
+      "color": "#650000FF",
+      "cover": "https://i.scdn.co/image/ab67616d00001e02c207280ef9ac378494b08237",
+      "coverPlaylist": "https://i.scdn.co/image/ab67616d00001e024aaf2413384c1efcc38353c6",
+      "title": "What Have They Done To Us (ft. Sasha Alex Sloan) (from the series Arcane League of Legends)",
+      "artists": [
+        "Arcane"
+      ]
+    },
+    {
+      "id": "ishas-song",
+      "playlistId": "arcane",
+      "color": "#003060",
+      "cover": "https://i.scdn.co/image/ab67616d00001e024aaf2413384c1efcc38353c6",
+      "coverPlaylist": "https://i.scdn.co/image/ab67616d00001e024aaf2413384c1efcc38353c6",
+      "title": "这样很好 (Isha's Song) (from the series Arcane League of Legends)",
+      "artists": [
+        "Eason Chan",
+        "Arcane",
+        "League of Legends"
+      ]
+    },
+    {
+      "id": "what-could-have-been",
+      "playlistId": "arcane",
+      "color": "#303038FF",
+      "cover": "https://i.scdn.co/image/ab67616d0000b27390d1dd89316f336262258965",
+      "coverPlaylist": "https://i.scdn.co/image/ab67616d00001e024aaf2413384c1efcc38353c6",
+      "title": "What Could Have Been",
+      "artists": [
+        "Arcane",
+        "Sting",
+        "Ray Chen"
+      ]
+    },
+    {
+      "id": "believer",
+      "playlistId": "image-dragons",
+      "color": "#0D3756FF",
+      "cover": "https://i.scdn.co/image/ab67616d00001e025675e83f707f1d7271e5cf8a",
+      "coverPlaylist": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84274a231dc93ab8f2010e6513", 
+      "title": "Believer",
+      "artists": [
+        "Image Dragons"
+      ]
+    },
+    {
+      "id": "demons",
+      "playlistId": "image-dragons",
+      "color": "#3A3242FF",
+      "cover": "https://i.scdn.co/image/ab67616d00001e02407bd04707c463bbb3410737",
+      "coverPlaylist": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84274a231dc93ab8f2010e6513", 
+      "title": "Demons",
+      "artists": [
+        "Image Dragons"
+      ]
+    },
+    {
+      "id": "warriors",
+      "playlistId": "image-dragons",
+      "color": "#C09100FF",
+      "cover": "https://i.scdn.co/image/ab67616d0000b273fc4fd5caca9f1dc4a3b0460a",
+      "coverPlaylist": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84274a231dc93ab8f2010e6513", 
+      "title": "Warriors",
+      "artists": [
+        "Image Dragons"
+      ]
+    },
+    {
+      "id": "enemy-image-dragons",
+      "playlistId": "image-dragons",
+      "color": "#A02028FF",
+      "cover": "https://i.scdn.co/image/ab67616d00001e02fc915b69600dce2991a61f13",
+      "coverPlaylist": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84274a231dc93ab8f2010e6513", 
+      "title": "Enemy (with JID) - from the series Arcane League of Legends",
+      "artists": [
+        "Image Dragons"
+      ]
+    },
+    {
+      "id": "im-so-sorry",
+      "color": "#C09100FF",
+      "playlistId": "image-dragons",
+      "cover": "https://i.scdn.co/image/ab67616d00001e02fc4fd5caca9f1dc4a3b0460a",
+      "coverPlaylist": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84274a231dc93ab8f2010e6513", 
+      "title": "I'm So Sorry",
+      "artists": [
+        "Image Dragons"
+      ]
+    },
+    {
+      "id": "bad-liar",
+      "playlistId": "image-dragons",
+      "color": "#285038FF",
+      "cover": "https://i.scdn.co/image/ab67616d00001e02da6f73a25f4c79d0e6b4a8bd",
+      "coverPlaylist": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84274a231dc93ab8f2010e6513", 
+      "title": "Bad Liar",
+      "artists": [
+        "Image Dragons"
+      ]
+    },
+    {
+      "id": "evil-morty-theme",
+      "playlistId": "sounds",
+      "color": "#C03030FF",
+      "cover": "https://i.scdn.co/image/ab67616d00001e02a98eab99c60a344a8d00fff8",
+      "coverPlaylist": "https://i.scdn.co/image/ab67616100005174bf023e4862d01765bfc9f5b7",
+      "title": "Evil Morty Theme (For The Damaged Coda) (Epic Version) - Cover",
+      "artists": [
+        "Samuel Kim"
+      ]
+    },
+    {
+      "id": "lacrimosa",
+      "playlistId": "sounds",
+      "color": "#C82030FF",
+      "cover": "https://i.scdn.co/image/ab67616d0000b27363691140e578d00671fb54a2",
+      "coverPlaylist": "https://i.scdn.co/image/ab67616100005174bf023e4862d01765bfc9f5b7",
+      "title": "Lacrimosa",
+      "artists": [
+        "Samuel Kim"
+      ]
+    },
+    {
+      "id": "demos-slayer-epic-collection",
+      "playlistId": "sounds",
+      "color": "#700000FF",
+      "cover": "https://i.scdn.co/image/ab67616d00001e0240a9f87d9c46fb52da9c1084",
+      "coverPlaylist": "https://i.scdn.co/image/ab67616100005174bf023e4862d01765bfc9f5b7",
+      "title": "Demon Slayer: Epic Collection (Cover)",
+      "artists": [
+        "Samuel Kim"
+      ]
+    },
+    {
+      "id": "i-really-want-to-stay-at-your-house",
+      "playlistId": "sounds",
+      "color": "#5888C8FF",
+      "cover": "https://i.scdn.co/image/ab67616d0000b273760dca9422caf3556e9f69e6",
+      "coverPlaylist": "https://i.scdn.co/image/ab67616100005174bf023e4862d01765bfc9f5b7",
+      "title": "I Really Want to Stay at Your House",
+      "artists": [
+        "Samuel Kim"
+      ]
+    },
+    {
+      "id": "call-of-silence-piano-version",
+      "playlistId": "sounds",
+      "color": "#5078C8FF",
+      "cover": "https://i.scdn.co/image/ab67616d00001e02cba9a2588c769c73c21c20e6",
+      "coverPlaylist": "https://i.scdn.co/image/ab67616100005174bf023e4862d01765bfc9f5b7",
+      "title": "Call Of Silence (Attack on Titan Piano)",
+      "artists": [
+        "Aleta",
+        "Samuel Kim"
+      ]
+    }
+  ]
+}

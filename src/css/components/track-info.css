@@ -1,0 +1,48 @@
+/* Track info */
+.track-info {
+  display: flex;
+  gap: .8em;
+  align-items: center;
+  overflow: hidden;
+}
+.track-info__image {
+  object-fit: cover;
+  max-width: none;
+  width: 3em;
+  height: 3em;
+}
+.track-info__texts {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  overflow: hidden;
+}
+.track-info__artists {
+  display: flex;
+  gap: .3em;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  text-overflow: ellipsis;
+}
+.track-info__title {
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: pointer;
+  text-overflow: ellipsis;
+  font-size: .8rem;
+  font-weight: 600;
+  color: #fff;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.track-info__artist {
+  font-size: .7rem;
+  color: #b3b3b3;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

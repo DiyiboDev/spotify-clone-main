@@ -1,0 +1,13 @@
+/* HTML: <div class="loader"></div> */
+.loader {
+  margin: auto;
+  width: 45px;
+  aspect-ratio: 1;
+  --c: no-repeat linear-gradient(#ffffff 0 0);
+  background: 
+    var(--c) 0%   50%,
+    var(--c) 50%  50%,
+    var(--c) 100% 50%;
+  background-size: 20% 100%;
+  animation: loading 1s infinite linear;
+}

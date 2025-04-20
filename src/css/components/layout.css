@@ -1,0 +1,29 @@
+
+/* Layout */
+
+/* Mobile - 320px and Tablet - 768px */
+.app {
+  --template-grid: 
+  "header"
+  "main"
+  "player";
+  
+  display: grid;
+  grid-template-areas: var(--template-grid);
+  grid-template-rows: 4em 1fr  auto;
+  grid-template-columns: 1fr;
+  height: 100vh;
+  column-gap: .5em;
+}
+
+/* Desktop - 1024px */
+@media ( width >= 1024px ) {
+  .app {
+    --template-grid: 
+      "header header header"
+      "aside-playlists main aside-video"
+      "player player player";
+    grid-template-columns: auto 1fr;
+    padding-inline: .5em;
+  }
+}

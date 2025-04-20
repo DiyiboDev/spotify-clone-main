@@ -1,0 +1,39 @@
+input[type="range"] {
+  appearance: none;
+  height: 4px;
+  background: linear-gradient(90deg, #fff 30%, #4d4d4d 30%);
+  cursor: pointer;
+  border-radius: .2em;
+
+  &:hover {
+    background: linear-gradient(90deg, #1db954 30%, #4d4d4d 30%);
+  }
+}
+
+/* Thumb: for Chrome, Safari, Edge */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 16px;
+  height: 16px;
+  scale: 0;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: none;
+}
+
+input[type="range"]:hover::-webkit-slider-thumb {
+  scale: 1;
+}
+
+/* Thumb: for Firefox */
+input[type="range"]::-moz-range-thumb {
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  box-shadow: none;
+  scale: 0;  
+}
+input[type="range"]:hover::-moz-range-thumb {
+  scale: 1;
+}

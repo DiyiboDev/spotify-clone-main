@@ -1,0 +1,29 @@
+{
+  "tracks": [     
+    { "id": 1, "image": "https://www.image.com", "title": "Enemy", "artist": "Imagine Dragons & JID" },
+    { "id": 2, "image": "https://www.image.com", "title": "Dynasties & Dystopia", "artist": "Denzel Curry, Gizzle & Bren Joy" },
+    { "id": 3, "image": "https://www.image.com", "title": "Snakes", "artist": "Pvris & Miyavi" },
+    { "id": 4, "image": "https://www.image.com", "title": "Misfit Toys", "artist": "Pusha T & Mako" },
+    { "id": 5, "image": "https://www.image.com", "title": "Goodbye", "artist": "Ramsey" },
+    { "id": 6, "image": "https://www.image.com", "title": "Guns For Hire", "artist": "Woodkid" },
+    { "id": 7, "image": "https://www.image.com", "title": "What Could Have Been", "artist": "Sting & Ray Chen" },
+    { "id": 8, "image": "https://www.image.com", "title": "Playground", "artist": "Bea Miller" },
+    { "id": 9, "image": "https://www.image.com", "title": "Our Love", "artist": "Curtis Harding & Jazmine Sullivan" },
+    { "id": 10, "image": "https://www.image.com", "title": "When Everything Went Wrong", "artist": "Fantastic Negrito" },
+    { "id": 11, "image": "https://www.image.com", "title": "Goodbye Remix", "artist": "Ramsey" },
+    { "id": 12, "image": "https://www.image.com", "title": "Lilac Wine", "artist": "Jeff Buckley" },
+    { "id": 13, "image": "https://www.image.com", "title": "Bane", "artist": "Bones UK" },
+    { "id": 14, "image": "https://www.image.com", "title": "Can’t Stop Me Now", "artist": "Celeste" },
+    { "id": 15, "image": "https://www.image.com", "title": "Till I’m a Ghost", "artist": "Noah Kahan" },
+    { "id": 16, "image": "https://www.image.com", "title": "Burn It All Down", "artist": "PVRIS" },
+    { "id": 17, "image": "https://www.image.com", "title": "Echoes", "artist": "The Score" },
+    { "id": 18, "image": "https://www.image.com", "title": "Only Ones", "artist": "Bishop Briggs" },
+    { "id": 19, "image": "https://www.image.com", "title": "Who’s Ready For Tomorrow", "artist": "REZZ & fknsyd" },
+    { "id": 20, "image": "https://www.image.com", "title": "Dirty Little Animals", "artist": "Bones UK" },
+    { "id": 21, "image": "https://www.image.com", "title": "The Call", "artist": "Kaden MacKay" },
+    { "id": 22, "image": "https://www.image.com", "title": "Hymn of Valor", "artist": "League of Legends Music Team" },
+    { "id": 23, "image": "https://www.image.com", "title": "Start a Riot", "artist": "Duckwrth & Shaboozey" },
+    { "id": 24, "image": "https://www.image.com", "title": "Legends Never Die", "artist": "Against The Current" },
+    { "id": 25, "image": "https://www.image.com", "title": "Rise", "artist": "The Glitch Mob, Mako & The Word Alive" }
+  ]
+}

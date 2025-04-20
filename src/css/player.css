@@ -1,0 +1,139 @@
+/* Player */
+.player {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  grid-area: player;
+  height: 5.5em;
+  gap: 1em;
+  padding: .2em .5em;
+
+  button.active {
+    color: #1db954;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      width: 4px;
+      height: 4px;
+      display: block;
+      bottom: -50%;
+      left: 50%;
+      background-color: #1db954;
+      transform: translateX(-50%);
+      border-radius: 50%;
+    }
+  }
+}
+@media ( width >= 1024px ) {
+  .player {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+
+/* Playback controls */
+.playback-controls {
+  display: none;
+}
+.playback-controls-mobile {
+  order: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1em;
+}
+.playback-controls-mobile__button {
+  color: #808080;
+  width: 2em;
+  height: 2em;
+}
+.playback-controls-mobile__button--play {
+  color: #fff;
+
+  &:hover {
+    scale: 1.1;
+  }
+}
+@media ( width >= 1024px ) {
+  .playback-controls-mobile {
+    display: none;
+  }
+  .playback-controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5em;
+  }
+  .playback-controls__buttons {
+    display: flex;
+    gap: 1.3em;
+    align-items: center;
+    justify-content: center;
+  }
+  .playback-controls__button, .additional-controls__button {
+    width: 1.12em;
+    height: 1.12em;
+    color: rgb(179, 179, 179);
+
+    &:hover {
+      color: #fff;
+    }
+
+    &:active {
+      color: #656565;
+    }
+  }
+  
+  .playback-controls__button--play {
+    color: #000;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 2em;
+    height: 2em;
+
+    &:hover {
+      scale: 1.05;
+      box-shadow: inset 0px 10px 15px -3px rgba(0,0,0,0.1);
+      color: #000;
+    }
+
+    &:active {
+      box-shadow: inset 0px 10px 15px -3px rgba(0,0,0,0.3);
+      scale: 1;
+    }
+  }
+  .playback-controls__time{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .3em;
+    width: 100%;
+  
+    span {
+      font-size: .9rem;
+      font-weight: 100;
+      letter-spacing: 1px;
+    }
+  }
+}
+
+
+/* Additional controls */
+.additional-controls {
+  display: none;
+}
+@media ( width >= 1024px ) {
+  .additional-controls {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 1em;
+  }
+  .additional-controls__volume {
+    display: flex;
+    gap: .4em;
+    align-items: center;
+  }
+}

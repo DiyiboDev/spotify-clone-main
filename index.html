@@ -1,0 +1,742 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/public/logo.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spotify Clone</title>
+    <script type="module" src="./main.js"></script>
+  </head>
+  <body class="default-layout" data-device="desktop">
+
+    <aside id="app" class="app">
+      <!-- Header -->
+      <header class="header">
+
+        <div class="header__left">
+          <div class="logo">
+            <a class="logo__link" href="/">
+              <svg role="img" fill="currentColor" viewBox="0 0 24 24" aria-label="Spotify" aria-hidden="false" height="32"><title>Spotify</title><path d="M13.427.01C6.805-.253 1.224 4.902.961 11.524.698 18.147 5.853 23.728 12.476 23.99c6.622.263 12.203-4.892 12.466-11.514S20.049.272 13.427.01m5.066 17.579a.717.717 0 0 1-.977.268 14.4 14.4 0 0 0-5.138-1.747 14.4 14.4 0 0 0-5.42.263.717.717 0 0 1-.338-1.392c1.95-.474 3.955-.571 5.958-.29 2.003.282 3.903.928 5.647 1.92a.717.717 0 0 1 .268.978m1.577-3.15a.93.93 0 0 1-1.262.376 17.7 17.7 0 0 0-5.972-1.96 17.7 17.7 0 0 0-6.281.238.93.93 0 0 1-1.11-.71.93.93 0 0 1 .71-1.11 19.5 19.5 0 0 1 6.94-.262 19.5 19.5 0 0 1 6.599 2.165c.452.245.62.81.376 1.263m1.748-3.551a1.147 1.147 0 0 1-1.546.488 21.4 21.4 0 0 0-6.918-2.208 21.4 21.4 0 0 0-7.259.215 1.146 1.146 0 0 1-.456-2.246 23.7 23.7 0 0 1 8.034-.24 23.7 23.7 0 0 1 7.657 2.445c.561.292.78.984.488 1.546m13.612-.036-.832-.247c-1.67-.495-2.14-.681-2.14-1.353 0-.637.708-1.327 2.264-1.327 1.539 0 2.839.752 3.51 1.31.116.096.24.052.24-.098V6.935c0-.097-.027-.15-.098-.203-.83-.62-2.272-1.07-3.723-1.07-2.953 0-4.722 1.68-4.722 3.59 0 2.157 1.371 2.91 3.626 3.546l.973.274c1.689.478 1.998.902 1.998 1.556 0 1.097-.831 1.433-2.07 1.433-1.556 0-3.457-.911-4.35-2.025-.08-.098-.177-.053-.177.062v2.423c0 .097.01.141.08.22.743.814 2.52 1.53 4.59 1.53 2.546 0 4.456-1.485 4.456-3.784 0-1.787-1.052-2.865-3.625-3.635m10.107-1.76c-1.68 0-2.653 1.026-3.219 2.052V9.376c0-.08-.044-.124-.124-.124h-2.22c-.079 0-.123.044-.123.124V20.72c0 .08.044.124.124.124h2.22c.079 0 .123-.044.123-.124v-4.536c.566 1.025 1.521 2.034 3.237 2.034 2.264 0 3.89-1.955 3.89-4.581s-1.644-4.545-3.908-4.545m-.654 6.986c-1.185 0-2.211-1.167-2.618-2.458.407-1.362 1.344-2.405 2.618-2.405 1.211 0 2.051.92 2.051 2.423s-.84 2.44-2.051 2.44m40.633-6.826h-2.264c-.08 0-.115.017-.15.097l-2.282 5.483-2.29-5.483c-.035-.08-.07-.097-.15-.097h-3.661v-.584c0-.955.645-1.397 1.476-1.397.496 0 1.035.256 1.415.486.089.053.15-.008.115-.088l-.796-1.901a.26.26 0 0 0-.124-.133c-.389-.203-1.025-.38-1.644-.38-1.875 0-2.954 1.432-2.954 3.254v.743h-1.503c-.08 0-.124.044-.124.124v1.768c0 .08.044.124.124.124h1.503v6.668c0 .08.044.123.124.123h2.264c.08 0 .124-.044.124-.123v-6.668h1.936l2.812 6.11-1.512 3.325c-.044.098.009.142.097.142h2.414c.08 0 .116-.018.15-.097l4.997-11.355c.035-.08-.009-.141-.097-.141M54.964 9.04c-2.865 0-4.837 2.025-4.837 4.616 0 2.573 1.971 4.616 4.837 4.616 2.856 0 4.846-2.043 4.846-4.616 0-2.591-1.99-4.616-4.846-4.616m.008 7.065c-1.37 0-2.343-1.043-2.343-2.45 0-1.405.973-2.449 2.343-2.449 1.362 0 2.335 1.043 2.335 2.45 0 1.406-.973 2.45-2.335 2.45m33.541-6.334a1.24 1.24 0 0 0-.483-.471 1.4 1.4 0 0 0-.693-.17q-.384 0-.693.17a1.24 1.24 0 0 0-.484.471q-.174.302-.174.681 0 .375.174.677.175.3.484.471t.693.17.693-.17.483-.471.175-.676q0-.38-.175-.682m-.211 1.247a1 1 0 0 1-.394.39 1.15 1.15 0 0 1-.571.14 1.16 1.16 0 0 1-.576-.14 1 1 0 0 1-.391-.39 1.14 1.14 0 0 1-.14-.566q0-.316.14-.562t.391-.388.576-.14q.32 0 .57.14.253.141.395.39t.142.565q0 .312-.142.56m-19.835-5.78c-.85 0-1.468.6-1.468 1.396s.619 1.397 1.468 1.397c.866 0 1.485-.6 1.485-1.397 0-.796-.619-1.397-1.485-1.397m19.329 5.19a.31.31 0 0 0 .134-.262q0-.168-.132-.266-.132-.099-.381-.099h-.588v1.229h.284v-.489h.154l.374.489h.35l-.41-.518a.5.5 0 0 0 .215-.084m-.424-.109h-.26v-.3h.27q.12 0 .184.036a.12.12 0 0 1 .065.116.12.12 0 0 1-.067.111.4.4 0 0 1-.192.037M69.607 9.252h-2.263c-.08 0-.124.044-.124.124v8.56c0 .08.044.123.124.123h2.263c.08 0 .124-.044.124-.123v-8.56c0-.08-.044-.124-.124-.124m-3.333 6.605a2.1 2.1 0 0 1-1.053.257c-.725 0-1.185-.425-1.185-1.362v-3.484h2.211c.08 0 .124-.044.124-.124V9.376c0-.08-.044-.124-.124-.124h-2.21V6.944c0-.097-.063-.15-.15-.08l-3.954 3.113c-.053.044-.07.088-.07.16v1.007c0 .08.044.124.123.124h1.539v3.855c0 2.087 1.203 3.06 2.918 3.06.743 0 1.46-.194 1.884-.442.062-.035.07-.07.07-.133v-1.68c0-.088-.044-.115-.123-.07" transform="translate(-0.95,0)"/>
+              </svg>
+            </a>
+          </div>
+  
+          <form class="search">
+            <div class="search__icon" data-control="search">
+              <button type="button" class="search__btn tooltip tooltip--bottom" data-tooltip="Search">
+                  <label for="search">
+                    <svg role="img" fill="currentColor" aria-hidden="true" viewBox="0 0 24 24"><path d="M10.533 1.27893C5.35215 1.27893 1.12598 5.41887 1.12598 10.5579C1.12598 15.697 5.35215 19.8369 10.533 19.8369C12.767 19.8369 14.8235 19.0671 16.4402 17.7794L20.7929 22.132C21.1834 22.5226 21.8166 22.5226 22.2071 22.132C22.5976 21.7415 22.5976 21.1083 22.2071 20.7178L17.8634 16.3741C19.1616 14.7849 19.94 12.7634 19.94 10.5579C19.94 5.41887 15.7138 1.27893 10.533 1.27893ZM3.12598 10.5579C3.12598 6.55226 6.42768 3.27893 10.533 3.27893C14.6383 3.27893 17.94 6.55226 17.94 10.5579C17.94 14.5636 14.6383 17.8369 10.533 17.8369C6.42768 17.8369 3.12598 14.5636 3.12598 10.5579Z"></path></svg>
+                  </label>
+              </button>
+            </div>
+            <div>
+              <input id="text" class="search__input" type="text" placeholder="What doy you want to play?">
+              <div class="modal__input">
+                <div class="modal__input-item">
+                  <div class="modal__input-info">
+                    <picture class="modal__input-picture">
+                      <img class="modal__input-image" src="public/images/example.jpeg" alt="">
+                    </picture>
+                    <div class="track-info__texts">
+                      <span class="track-info__title modal__input-title">
+                        What Could Have Been
+                      </span>
+                      <div class="track__info-artists">
+                        <span class="track-info__artist modal__input-artist">
+                          Sting
+                        </span>
+                        <span class="track-info__artist modal__input-artist">
+                          Ray Chain
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <button class="modal__input-close">
+                    <svg fill="currentColor" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"><path d="M2.47 2.47a
+                      .75.75 0 0 1 1.06 0L8 6.94l4.47-4.47a.75.75 0 1 1 1.06 1.06L9.06 8l4.47 4.47a.75.75 0 1 1-1.06 1.06L8 9.06l-4.47 4.47a.75.75 0 0 1-1.06-1.06L6.94 8 2.47 3.53a.75.75 0 0 1 0-1.06Z"></path></svg>
+                  </button>
+                </div>
+
+                <div class="modal__input-item">
+                  <div class="modal__input-info">
+                    <picture class="modal__input-picture">
+                      <img class="modal__input-image" src="public/images/example2.jpeg" alt="">
+                    </picture>
+                    <div class="track-info__texts">
+                      <span class="track-info__title modal__input-title">
+                        Enemy with JID (Opening version)(from the series Arcane League of Legends)
+                      </span>
+                      <div class="track__info-artists">
+                        <span class="track-info__artist modal__input-artist">
+                          League of Legends
+                        </span>
+                        <span class="track-info__artist modal__input-artist">
+                          Image Dragons
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <button class="modal__input-close">
+                    <svg fill="currentColor" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"><path d="M2.47 2.47a
+                      .75.75 0 0 1 1.06 0L8 6.94l4.47-4.47a.75.75 0 1 1 1.06 1.06L9.06 8l4.47 4.47a.75.75 0 1 1-1.06 1.06L8 9.06l-4.47 4.47a.75.75 0 0 1-1.06-1.06L6.94 8 2.47 3.53a.75.75 0 0 1 0-1.06Z"></path></svg>
+                  </button>
+                </div>
+
+                <div class="modal__input-item">
+                  <div class="modal__input-info">
+                    <picture class="modal__input-picture">
+                      <img class="modal__input-image" src="public/images/example.jpeg" alt="">
+                    </picture>
+                    <div class="track-info__texts">
+                      <span class="track-info__title modal__input-title">
+                        What Could Have Been
+                      </span>
+                      <div class="track__info-artists">
+                        <span class="track-info__artist modal__input-artist">
+                          Sting
+                        </span>
+                        <span class="track-info__artist modal__input-artist">
+                          Ray Chain
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <button class="modal__input-close">
+                    <svg fill="currentColor" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"><path d="M2.47 2.47a
+                      .75.75 0 0 1 1.06 0L8 6.94l4.47-4.47a.75.75 0 1 1 1.06 1.06L9.06 8l4.47 4.47a.75.75 0 1 1-1.06 1.06L8 9.06l-4.47 4.47a.75.75 0 0 1-1.06-1.06L6.94 8 2.47 3.53a.75.75 0 0 1 0-1.06Z"></path></svg>
+                  </button>
+                </div>
+
+                <div class="modal__input-item">
+                  <div class="modal__input-info">
+                    <picture class="modal__input-picture">
+                      <img class="modal__input-image" src="public/images/example2.jpeg" alt="">
+                    </picture>
+                    <div class="track-info__texts">
+                      <span class="track-info__title modal__input-title">
+                        Enemy with JID (Opening version)(from the series Arcane League of Legends)
+                      </span>
+                      <div class="track__info-artists">
+                        <span class="track-info__artist modal__input-artist">
+                          League of Legends
+                        </span>
+                        <span class="track-info__artist modal__input-artist">
+                          Image Dragons
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <button class="modal__input-close">
+                    <svg fill="currentColor" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"><path d="M2.47 2.47a
+                      .75.75 0 0 1 1.06 0L8 6.94l4.47-4.47a.75.75 0 1 1 1.06 1.06L9.06 8l4.47 4.47a.75.75 0 1 1-1.06 1.06L8 9.06l-4.47 4.47a.75.75 0 0 1-1.06-1.06L6.94 8 2.47 3.53a.75.75 0 0 1 0-1.06Z"></path></svg>
+                  </button>
+                </div>
+
+                <div class="modal__input-item">
+                  <div class="modal__input-info">
+                    <picture class="modal__input-picture">
+                      <img class="modal__input-image" src="public/images/example.jpeg" alt="">
+                    </picture>
+                    <div class="track-info__texts">
+                      <span class="track-info__title modal__input-title">
+                        What Could Have Been
+                      </span>
+                      <div class="track__info-artists">
+                        <span class="track-info__artist modal__input-artist">
+                          Sting
+                        </span>
+                        <span class="track-info__artist modal__input-artist">
+                          Ray Chain
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <button class="modal__input-close">
+                    <svg fill="currentColor" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"><path d="M2.47 2.47a
+                      .75.75 0 0 1 1.06 0L8 6.94l4.47-4.47a.75.75 0 1 1 1.06 1.06L9.06 8l4.47 4.47a.75.75 0 1 1-1.06 1.06L8 9.06l-4.47 4.47a.75.75 0 0 1-1.06-1.06L6.94 8 2.47 3.53a.75.75 0 0 1 0-1.06Z"></path></svg>
+                  </button>
+                </div>
+
+                <div class="modal__input-item">
+                  <div class="modal__input-info">
+                    <picture class="modal__input-picture">
+                      <img class="modal__input-image" src="public/images/example2.jpeg" alt="">
+                    </picture>
+                    <div class="track-info__texts">
+                      <span class="track-info__title modal__input-title">
+                        Enemy with JID (Opening version)(from the series Arcane League of Legends)
+                      </span>
+                      <div class="track__info-artists">
+                        <span class="track-info__artist modal__input-artist">
+                          League of Legends
+                        </span>
+                        <span class="track-info__artist modal__input-artist">
+                          Image Dragons
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <button class="modal__input-close">
+                    <svg fill="currentColor" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"><path d="M2.47 2.47a
+                      .75.75 0 0 1 1.06 0L8 6.94l4.47-4.47a.75.75 0 1 1 1.06 1.06L9.06 8l4.47 4.47a.75.75 0 1 1-1.06 1.06L8 9.06l-4.47 4.47a.75.75 0 0 1-1.06-1.06L6.94 8 2.47 3.53a.75.75 0 0 1 0-1.06Z"></path></svg>
+                  </button>
+                </div>
+
+                <div class="modal__input-item">
+                  <div class="modal__input-info">
+                    <picture class="modal__input-picture">
+                      <img class="modal__input-image" src="public/images/example.jpeg" alt="">
+                    </picture>
+                    <div class="track-info__texts">
+                      <span class="track-info__title modal__input-title">
+                        What Could Have Been
+                      </span>
+                      <div class="track__info-artists">
+                        <span class="track-info__artist modal__input-artist">
+                          Sting
+                        </span>
+                        <span class="track-info__artist modal__input-artist">
+                          Ray Chain
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <button class="modal__input-close">
+                    <svg fill="currentColor" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"><path d="M2.47 2.47a
+                      .75.75 0 0 1 1.06 0L8 6.94l4.47-4.47a.75.75 0 1 1 1.06 1.06L9.06 8l4.47 4.47a.75.75 0 1 1-1.06 1.06L8 9.06l-4.47 4.47a.75.75 0 0 1-1.06-1.06L6.94 8 2.47 3.53a.75.75 0 0 1 0-1.06Z"></path></svg>
+                  </button>
+                </div>
+
+                <div class="modal__input-item">
+                  <div class="modal__input-info">
+                    <picture class="modal__input-picture">
+                      <img class="modal__input-image" src="public/images/example2.jpeg" alt="">
+                    </picture>
+                    <div class="track-info__texts">
+                      <span class="track-info__title modal__input-title">
+                        Enemy with JID (Opening version)(from the series Arcane League of Legends)
+                      </span>
+                      <div class="track__info-artists">
+                        <span class="track-info__artist modal__input-artist">
+                          League of Legends
+                        </span>
+                        <span class="track-info__artist modal__input-artist">
+                          Image Dragons
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <button class="modal__input-close">
+                    <svg fill="currentColor" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"><path d="M2.47 2.47a
+                      .75.75 0 0 1 1.06 0L8 6.94l4.47-4.47a.75.75 0 1 1 1.06 1.06L9.06 8l4.47 4.47a.75.75 0 1 1-1.06 1.06L8 9.06l-4.47 4.47a.75.75 0 0 1-1.06-1.06L6.94 8 2.47 3.53a.75.75 0 0 1 0-1.06Z"></path></svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <div class="header__right">
+          <a class="header__right-link" href="https://github.com/DiyiboDev/spotify-clone" target="_blank">
+              <svg viewBox="0 0 496 512" role="img" aria-hidden="true" fill="currentColor" width="24" height="24"><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+          </a>
+          <button class="header__account-btn tooltip tooltip--bottom-mini" data-tooltip="Diyibo">
+            <picture>
+              <img src="/images/artist.jpg" alt="Avatar Account [Diyibo]">
+            </picture>
+          </button>
+        </div>
+
+      </header>
+
+      <!-- Main -->
+      <main class="main" style="background-color: rgb(0, 48, 96);">
+        <div class="main__container">
+          <!-- <div class="loader"></div> -->
+        <div data-id="arcane" class="main__information" style="background-image: linear-gradient(rgb(0, 48, 96) 10%, rgba(18, 18, 18, 0.616) 100%); background-color: rgb(0, 48, 96);">
+    <div class="main__content">
+      <picture class="main__picture">
+        <img class="main__image" src="https://i.scdn.co/image/ab67616d00001e024aaf2413384c1efcc38353c6" alt="Arcane League of Legends Season 1 and Season 2">
+      </picture>
+
+      <div class="main__texts">
+        <h4 class="main__title">Arcane League of Legends Season 1 and Season 2</h4>
+
+        <div class="artist">
+          <div class="artist__container">
+            <picture class="artist__picture">
+              <img class="artist__image" src="https://i.scdn.co/image/ab67616d00001e024aaf2413384c1efcc38353c6" alt="Artist: Arcane,League of Legends">
+            </picture>
+
+            <span class="artist__name">Arcane</span>,<span class="artist__name">League of Legends</span>
+          </div>
+
+          <div class="main__time">
+            <span>
+              <time datetime="2024">2024</time>
+            </span>
+            <span>1 cancion, 2 min 35 s</span>
+          </div>
+        </div>
+
+        <div class="main-controls">
+          <div class="main-controls__buttons">
+            <button class="main-controls__button tooltip tooltip--right" data-tooltip="Add to Liked Songs">
+              <span class="controls__span">
+                <svg viewBox="0 -960 960 960" fill="currentColor"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"></path></svg>
+              </span>
+            </button>
+
+            <button class="main-controls__button tooltip" data-tooltip="Share">
+              <span class="controls__span">
+              <svg viewBox="0 -960 960 960" fill="currentColor"><path d="M680-80q-50 0-85-35t-35-85q0-6 3-28L282-392q-16 15-37 23.5t-45 8.5q-50 0-85-35t-35-85q0-50 35-85t85-35q24 0 45 8.5t37 23.5l281-164q-2-7-2.5-13.5T560-760q0-50 35-85t85-35q50 0 85 35t35 85q0 50-35 85t-85 35q-24 0-45-8.5T598-672L317-508q2 7 2.5 13.5t.5 14.5q0 8-.5 14.5T317-452l281 164q16-15 37-23.5t45-8.5q50 0 85 35t35 85q0 50-35 85t-85 35Zm0-80q17 0 28.5-11.5T720-200q0-17-11.5-28.5T680-240q-17 0-28.5 11.5T640-200q0 17 11.5 28.5T680-160ZM200-440q17 0 28.5-11.5T240-480q0-17-11.5-28.5T200-520q-17 0-28.5 11.5T160-480q0 17 11.5 28.5T200-440Zm480-280q17 0 28.5-11.5T720-760q0-17-11.5-28.5T680-800q-17 0-28.5 11.5T640-760q0 17 11.5 28.5T680-720Zm0 520ZM200-480Zm480-280Z"></path></svg>
+              </span>
+            </button>
+
+            <button class="main-controls__button tooltip" data-tooltip="More options">
+              <span class="controls__span">
+              <svg viewBox="0 -960 960 960" fill="currentColor"><path d="M480-160q-33 0-56.5-23.5T400-240q0-33 23.5-56.5T480-320q33 0 56.5 23.5T560-240q0 33-23.5 56.5T480-160Zm0-240q-33 0-56.5-23.5T400-480q0-33 23.5-56.5T480-560q33 0 56.5 23.5T560-480q0 33-23.5 56.5T480-400Zm0-240q-33 0-56.5-23.5T400-720q0-33 23.5-56.5T480-800q33 0 56.5 23.5T560-720q0 33-23.5 56.5T480-640Z"></path></svg>
+              </span>
+            </button>
+          </div>
+
+          <button data-control="play" class="main__play tooltip tooltip--top-mini" data-tooltip="Play">
+            <span>
+              <svg fill="currentColor" role="img" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5.14v14l11-7-11-7z"></path></svg>
+            </span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div></div>
+
+
+        <div class="playlist"><div class="playlist__content"><div class="playlist__song track-info">
+      <picture class="track-info__picture">
+        <img class="track-info__image" src="https://i.scdn.co/image/ab67616d00001e0237706d3b594fa52d5a1ef026" alt="Enemy">
+      </picture>
+  
+      <div class="track-info__texts">
+        <div>
+          <a class="track-link" href="/track/enemy-arcane">
+            <span class="track-info__title">Enemy</span>
+          </a>
+        </div>
+        <div class="track-info__artists">
+          <span class="track-info__artist">Imagine Dragons</span>,<span class="track-info__artist">JID</span>
+        </div>
+        
+      </div>
+      <span class="track-info__duration">2 min 35 sec</span>
+    </div><div class="playlist__song track-info">
+      <picture class="track-info__picture">
+        <img class="track-info__image" src="https://i.scdn.co/image/ab67616d00001e028a4aa9f5c68f7f8aed473671" alt="Guns for hire">
+      </picture>
+  
+      <div class="track-info__texts">
+        <div>
+          <a class="track-link" href="/track/guns-for-hire">
+            <span class="track-info__title">Guns for hire</span>
+          </a>
+        </div>
+        <div class="track-info__artists">
+          <span class="track-info__artist">Wookid</span>,<span class="track-info__artist">Arcane</span>,<span class="track-info__artist">League of Legends</span>
+        </div>
+        
+      </div>
+      <span class="track-info__duration">2 min 35 sec</span>
+    </div><div class="playlist__song track-info">
+      <picture class="track-info__picture">
+        <img class="track-info__image" src="https://i.scdn.co/image/ab67616d00001e024aaf2413384c1efcc38353c6" alt="To ashes and blood">
+      </picture>
+  
+      <div class="track-info__texts">
+        <div>
+          <a class="track-link" href="/track/to-ashes-and-blood">
+            <span class="track-info__title">To ashes and blood</span>
+          </a>
+        </div>
+        <div class="track-info__artists">
+          <span class="track-info__artist">Wookid</span>,<span class="track-info__artist">Arcane</span>,<span class="track-info__artist">League of Legends</span>
+        </div>
+        
+      </div>
+      <span class="track-info__duration">2 min 35 sec</span>
+    </div><div class="playlist__song track-info">
+      <picture class="track-info__picture">
+        <img class="track-info__image" src="https://i.scdn.co/image/ab67616d0000b273cfe7a215980d904a81ba9aa7" alt="Collaboration">
+      </picture>
+  
+      <div class="track-info__texts">
+        <div>
+          <a class="track-link" href="/track/collaboration">
+            <span class="track-info__title">Collaboration</span>
+          </a>
+        </div>
+        <div class="track-info__artists">
+          <span class="track-info__artist">Arcane</span>
+        </div>
+        
+      </div>
+      <span class="track-info__duration">2 min 35 sec</span>
+    </div><div class="playlist__song track-info">
+      <picture class="track-info__picture">
+        <img class="track-info__image" src="https://i.scdn.co/image/ab67616d00001e02aa6b1a8d8438ffded6831646" alt="Bite Marks">
+      </picture>
+  
+      <div class="track-info__texts">
+        <div>
+          <a class="track-link" href="/track/bite-marks">
+            <span class="track-info__title">Bite Marks</span>
+          </a>
+        </div>
+        <div class="track-info__artists">
+          <span class="track-info__artist">Leagues of Legends</span>,<span class="track-info__artist">TEYA</span>
+        </div>
+        
+      </div>
+      <span class="track-info__duration">2 min 35 sec</span>
+    </div><div class="playlist__song track-info">
+      <picture class="track-info__picture">
+        <img class="track-info__image" src="https://i.scdn.co/image/ab67616d00001e02c207280ef9ac378494b08237" alt="What Have They Done To Us (ft. Sasha Alex Sloan) (from the series Arcane League of Legends)">
+      </picture>
+  
+      <div class="track-info__texts">
+        <div>
+          <a class="track-link" href="/track/what-have-they-done-to-us">
+            <span class="track-info__title">What Have They Done To Us (ft. Sasha Alex Sloan) (from the series Arcane League of Legends)</span>
+          </a>
+        </div>
+        <div class="track-info__artists">
+          <span class="track-info__artist">Arcane</span>
+        </div>
+        
+      </div>
+      <span class="track-info__duration">2 min 35 sec</span>
+    </div><div class="playlist__song track-info">
+      <picture class="track-info__picture">
+        <img class="track-info__image" src="https://i.scdn.co/image/ab67616d0000b27390d1dd89316f336262258965" alt="What Could Have Been">
+      </picture>
+  
+      <div class="track-info__texts">
+        <div>
+          <a class="track-link" href="/track/what-could-have-been">
+            <span class="track-info__title">What Could Have Been</span>
+          </a>
+        </div>
+        <div class="track-info__artists">
+          <span class="track-info__artist">Arcane</span>,<span class="track-info__artist">Sting</span>,<span class="track-info__artist">Ray Chen</span>
+        </div>
+        
+      </div>
+      <span class="track-info__duration">2 min 35 sec</span>
+    </div><div class="playlist__song track-info">
+      <picture class="track-info__picture">
+        <img class="track-info__image" src="https://i.scdn.co/image/ab67616d00001e024aaf2413384c1efcc38353c6" alt="这样很好 (Isha's Song) (from the series Arcane League of Legends)">
+      </picture>
+  
+      <div class="track-info__texts">
+        <div>
+          <a class="track-link" href="/track/ishas-song">
+            <span class="track-info__title">这样很好 (Isha's Song) (from the series Arcane League of Legends)</span>
+          </a>
+        </div>
+        <div class="track-info__artists">
+          <span class="track-info__artist">Eason Chan</span>,<span class="track-info__artist">Arcane</span>,<span class="track-info__artist">League of Legends</span>
+        </div>
+        
+      </div>
+      <span class="track-info__duration">2 min 35 sec</span>
+    </div></div></div>
+
+      </main>
+
+      <!-- Playlists -->
+      <aside class="aside-playlists">
+        <div class="playlists">
+
+          <div class="playlists__actions">
+            <a href="#" class="playlists__link">
+              <svg role="img" width="24px" height="24px" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M12.5 3.247a1 1 0 0 0-1 0L4 7.577V20h4.5v-6a1 1 0 0 1 1-1h5a1 1 0 0 1 1 1v6H20V7.577l-7.5-4.33zm-2-1.732a3 3 0 0 1 3 0l7.5 4.33a2 2 0 0 1 1 1.732V21a1 1 0 0 1-1 1h-6.5a1 1 0 0 1-1-1v-6h-3v6a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V7.577a2 2 0 0 1 1-1.732l7.5-4.33z"></path></svg>
+              <span>
+                Home
+              </span>
+            </a>
+
+            <a href="#" class="playlists__link">
+              <svg role="img" width="24px" height="24px" aria-hidden="true" viewBox="0 0 24 24" fill="currentColor"><path d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"></path></svg>
+              <span>
+                Playlists
+              </span>
+            </a>
+          </div>
+
+          <div class="playlists-create">
+            <button id="button-create-playlist" class="playlists-create__button">Create Playlist</button>
+          </div>
+
+          <div class="playlists__songs">
+            <div class="loader hidden"></div>
+          <a data-id="arcane" class="playlist__song track-info" href="/playlist/arcane">
+    <picture class="track-info__picture">
+      <img class="track-info__image" src="https://i.scdn.co/image/ab67616d00001e024aaf2413384c1efcc38353c6" alt="Arcane League of Legends Season 1 and Season 2">
+    </picture>
+
+    <div class="track-info__texts">
+      <span class="track-info__title">Arcane League of Legends Season 1 and Season 2</span>
+      <div class="track-info__artists">
+        <span class="track-info__artist">Arcane,League of Legends</span>
+      </div>
+    </div>
+  </a><a data-id="image-dragons-envolve" class="playlist__song track-info" href="/playlist/image-dragons-envolve">
+    <picture class="track-info__picture">
+      <img class="track-info__image" src="https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84274a231dc93ab8f2010e6513" alt="Imagine Dragons: Evolve">
+    </picture>
+
+    <div class="track-info__texts">
+      <span class="track-info__title">Imagine Dragons: Evolve</span>
+      <div class="track-info__artists">
+        <span class="track-info__artist">Imagine Dragons</span>
+      </div>
+    </div>
+  </a><a data-id="sounds" class="playlist__song track-info" href="/playlist/sounds">
+    <picture class="track-info__picture">
+      <img class="track-info__image" src="https://i.scdn.co/image/ab67616100005174bf023e4862d01765bfc9f5b7" alt="Sounds and Melodies">
+    </picture>
+
+    <div class="track-info__texts">
+      <span class="track-info__title">Sounds and Melodies</span>
+      <div class="track-info__artists">
+        <span class="track-info__artist">Samuel Kim</span>
+      </div></div></a>
+          </div>
+        </div>
+      </aside>
+
+      <!-- Video -->
+      <aside class="aside-video">
+        <div class="aside-video__fullscreen">
+          <div class="aside-video__content">
+
+            <div class="aside-video__top">
+              <a href="#" class="track-info__title">Diyibo</a>
+              <button class="aside-video__close tooltip tooltip--bottom-mini" data-tooltip="Close" id="close-video">
+                <svg fill="currentColor" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"><path d="M2.47 2.47a
+                  .75.75 0 0 1 1.06 0L8 6.94l4.47-4.47a.75.75 0 1 1 1.06 1.06L9.06 8l4.47 4.47a.75.75 0 1 1-1.06 1.06L8 9.06l-4.47 4.47a.75.75 0 0 1-1.06-1.06L6.94 8 2.47 3.53a.75.75 0 0 1 0-1.06Z"></path></svg>
+              </button>
+            </div>
+  
+            <div class="aside-video__texts">
+
+              <div class="track-info__texts">
+                <div>
+                  <span class="track-info__title">Spin The Wheel (from the series Arcane League of Legends)</span>
+                </div>
+                <div class="track-info__artists">
+                  <span class="track-info__artist">Arcane,</span>
+                  <span class="track-info__artist">League of Legends</span>
+                </div>
+                
+              </div>
+
+              <div class="card-artist">
+                <span class="card-artist__title">About the artist</span>
+
+                <figure class="card-artist__figure">
+                  <img src="/images/artist.jpg" alt="">
+                </figure>
+                
+                <a href="#" class="track-info__artist">Arcane</a>
+
+                <div class="card-artist__data">
+                  <span class="card-artist__listeners">23,172,037</br> monthly listeners</span>
+                  <button class="card-artist__follow">Follow</button>
+                </div>
+
+                <span class="card-artist__history">
+                  Woodkid grew up in France and spent many years in the United States, where he built part of his career, fascinated by bridging music and visuals.
+
+As a musician and director, Woodkid has collaborated with Drake, Rihanna, Lady Gaga, Pharrell Williams, Lana del Rey, Harry Styles, Taylor Swift, FKA Twigs, Katy Perry, John Legend, Mahmood, Lykke Li…
+Woodkid won the 2023 Sacem Award for the most exported French artist and is now one of the most listened-to French singers internationally. Nominated 3 times for the prestigious Grammy Awards and multiple times for the MTV Music Awards, he has also worked with major figures in cinema, composing or lending his music to the works of Steven Spielberg, Alfonso Cuaron, and Xavier Dolan. In 2018, he won a Brit Award for his collaboration with Harry Styles.
+
+He composed the opening music for the 2024 Paris Olympics. He has also provided music for Louis Vuitton’s women’s shows by Nicolas Ghesquière for over ten seasons.
+
+In 2022, with his song “Guns for Hire,” he created the soundtrack for Episode 6 of the hit Netflix series Arcane, which later won the Emmy Award for best sound. The track has since accumulated nearly 50 million streams on Spotify.
+
+His hit single “Run Boy Run,” certified five times diamond (250 million streams), also became one of the most used tracks on TikTok in 2022 and 2023.
+
+His album The Golden Age has sold over a million copies, and his discography now combines nearly a billion cumulative streams across platforms.
+                </span>
+              </div>
+              
+            </div>
+
+          </div>
+         
+          <video src="public/videos/example2.mp4" muted loop></video>
+        </div>
+
+        <div class="aside-video__show">
+          <button class="tooltip tooltip--top-left aside-video__show-btn" data-tooltip="Show now playing view">
+            <svg fill="currentColor" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"><path d="M11.03.47a.75.75 0 0 1 0 1.06L4.56 8l6.47 6.47a.75.75 0 1 1-1.06 1.06L2.44 8 9.97.47a.75.75 0 0 1 1.06 0z"></path></svg>
+          </button>
+        </div>
+      </aside>
+      
+      <!-- Player -->
+      <div class="player">
+        <!-- Only for mobile -->
+        <div class="playback-controls-mobile">
+          <button class="playback-controls-mobile__button tooltip" data-tooltip="Add to Liked Songs">
+            <span>
+              <svg viewBox="0 -960 960 960" fill="#808080"><path d="m480-120-58-52q-101-91-167-157T150-447.5Q111-500 95.5-544T80-634q0-94 63-157t157-63q52 0 99 22t81 62q34-40 81-62t99-22q94 0 157 63t63 157q0 46-15.5 90T810-447.5Q771-395 705-329T538-172l-58 52Zm0-108q96-86 158-147.5t98-107q36-45.5 50-81t14-70.5q0-60-40-100t-100-40q-47 0-87 26.5T518-680h-76q-15-41-55-67.5T300-774q-60 0-100 40t-40 100q0 35 14 70.5t50 81q36 45.5 98 107T480-228Zm0-273Z"></path></svg>
+            </span>
+          </button>
+          
+          <button data-control="play" class="playback-controls-mobile__button playback-controls-mobile__button--play tooltip" data-tooltip="Play">
+            <span>
+              <svg viewBox="0 0 24 24" fill="currentColor"><path fill="currentColor" d="M8 5.14v14l11-7-11-7z"></path></svg>
+            </span>
+          </button>
+        </div>
+
+        <!-- Only for desktop -->
+        <div class="track-info">
+          <picture class="track-info__picture">
+            <img class="track-info__image" src="public/images/example.jpeg" alt="Album Image">
+          </picture>
+
+          <div class="track-info__texts">
+            <div>
+              <span class="track-info__title">Spin The Wheel (from the series Arcane League of Legends)</span>
+            </div>
+            <div class="track-info__artists">
+              <span class="track-info__artist">Arcane,</span>
+              <span class="track-info__artist">League of Legends</span>
+            </div>
+
+          </div>
+        </div>
+        
+        <div class="playback-controls">
+          <div class="playback-controls__buttons">
+            <button class="playback-controls__button tooltip active" data-tooltip="Enable shuffle">
+              <span>
+                <svg fill="currentColor" viewBox="0 0 24 24" role="img"><path d="M18.788 3.702a1 1 0 0 1 1.414-1.414L23.914 6l-3.712 3.712a1 1 0 1 1-1.414-1.414L20.086 7h-1.518a5 5 0 0 0-3.826 1.78l-7.346 8.73a7 7 0 0 1-5.356 2.494H1v-2h1.04a5 5 0 0 0 3.826-1.781l7.345-8.73A7 7 0 0 1 18.569 5h1.518l-1.298-1.298z"></path><path d="M18.788 14.289a1 1 0 0 0 0 1.414L20.086 17h-1.518a5 5 0 0 1-3.826-1.78l-1.403-1.668-1.306 1.554 1.178 1.4A7 7 0 0 0 18.568 19h1.518l-1.298 1.298a1 1 0 1 0 1.414 1.414L23.914 18l-3.712-3.713a1 1 0 0 0-1.414 0zM7.396 6.49l2.023 2.404-1.307 1.553-2.246-2.67a5 5 0 0 0-3.826-1.78H1v-2h1.04A7 7 0 0 1 7.396 6.49z"></path></svg>
+              </span>
+            </button>
+            <button class="playback-controls__button tooltip" data-tooltip="Previous">
+              <span>
+                <svg fill="currentColor" role="img" viewBox="0 0 24 24"><path d="M6.3 3a.7.7 0 0 1 .7.7v6.805l11.95-6.899a.7.7 0 0 1 1.05.606v15.576a.7.7 0 0 1-1.05.606L7 13.495V20.3a.7.7 0 0 1-.7.7H4.7a.7.7 0 0 1-.7-.7V3.7a.7.7 0 0 1 .7-.7h1.6z"></path></svg>
+              </span>
+              <span>
+              </span>
+            </button>
+            <button data-control="play" class="playback-controls__button playback-controls__button--play tooltip" data-tooltip="Play">
+              <svg fill="currentColor" role="img" viewBox="0 0 24 24" fill="currentColor"><path fill="currentColor" d="M8 5.14v14l11-7-11-7z"></path></svg>
+            </button>
+            <button class="playback-controls__button tooltip" data-tooltip="Next">
+              <span>
+                <svg fill="currentColor" role="img" viewBox="0 0 24 24"><path d="M17.7 3a.7.7 0 0 0-.7.7v6.805L5.05 3.606A.7.7 0 0 0 4 4.212v15.576a.7.7 0 0 0 1.05.606L17 13.495V20.3a.7.7 0 0 0 .7.7h1.6a.7.7 0 0 0 .7-.7V3.7a.7.7 0 0 0-.7-.7h-1.6z"></path></svg>
+              </span>
+            </button>
+            <button class="playback-controls__button tooltip active" data-tooltip="Enable repeat">
+              <span>
+                <svg role="img" fill="currentColor" viewBox="0 0 24 24"><path d="M6 2a5 5 0 0 0-5 5v8a5 5 0 0 0 5 5h1v-2H6a3 3 0 0 1-3-3V7a3 3 0 0 1 3-3h12a3 3 0 0 1 3 3v8a3 3 0 0 1-3 3h-4.798l1.298-1.298a1 1 0 1 0-1.414-1.414L9.373 19l3.713 3.712a1 1 0 0 0 1.414-1.414L13.202 20H18a5 5 0 0 0 5-5V7a5 5 0 0 0-5-5H6z"></path></svg>
+              </span>
+            </button>
+          </div>
+
+          <div class="playback-controls__time">
+            <span>0:00</span>
+            <input type="range" id="range-time" value="30" type="range" min="0" max="100">
+            <span>0:00</span>
+          </div>
+        </div>
+        
+        <div class="additional-controls">
+          <button class="additional-controls__button tooltip active" data-tooltip="Lyrics">
+            <span>
+              <svg fill="currentColor" role="img" aria-hidden="true" viewBox="0 0 16 16"><path d="M13.426 2.574a2.831 2.831 0 0 0-4.797 1.55l3.247 3.247a2.831 2.831 0 0 0 1.55-4.797zM10.5 8.118l-2.619-2.62A63303.13 63303.13 0 0 0 4.74 9.075L2.065 12.12a1.287 1.287 0 0 0 1.816 1.816l3.06-2.688 3.56-3.129zM7.12 4.094a4.331 4.331 0 1 1 4.786 4.786l-3.974 3.493-3.06 2.689a2.787 2.787 0 0 1-3.933-3.933l2.676-3.045 3.505-3.99z"></path></svg>
+            </span>
+          </button>
+          
+          <button class="additional-controls__button tooltip active" data-tooltip="Download">
+            <span>
+              <svg fill="currentColor" role="img" aria-hidden="true" viewBox="0 0 24 24"><path d="M12 3a9 9 0 100 18 9 9 0 000-18zM1 12C1 5.925 5.925 1 12 1s11 4.925 11 11-4.925 11-11 11S1 18.075 1 12z"></path><path d="M12 6.05a1 1 0 011 1v7.486l1.793-1.793a1 1 0 111.414 1.414L12 18.364l-4.207-4.207a1 1 0 111.414-1.414L11 14.536V7.05a1 1 0 011-1z"></path></svg>
+            </span>
+          </button>
+
+          <div class="additional-controls__volume">
+            <button class="additional-controls__button tooltip" data-tooltip="Mute">
+              <span>
+                <svg role="presentation" fill="currentColor" aria-label="Volumen alto" viewBox="0 0 16 16"><path d="M9.741.85a.75.75 0 0 1 .375.65v13a.75.75 0 0 1-1.125.65l-6.925-4a3.642 3.642 0 0 1-1.33-4.967 3.639 3.639 0 0 1 1.33-1.332l6.925-4a.75.75 0 0 1 .75 0zm-6.924 5.3a2.139 2.139 0 0 0 0 3.7l5.8 3.35V2.8l-5.8 3.35zm8.683 4.29V5.56a2.75 2.75 0 0 1 0 4.88z"></path><path d="M11.5 13.614a5.752 5.752 0 0 0 0-11.228v1.55a4.252 4.252 0 0 1 0 8.127v1.55z"></path></svg>
+              </span>
+            </button>
+            
+            <input type="range" id="range-volume" value="30" type="range" min="0" max="100">
+          </div>
+          
+          <button class="additional-controls__button tooltip active" data-tooltip="Open Miniplayer">
+            <span>
+              <svg fill="currentColor" role="img" aria-hidden="true" viewBox="0 0 16 16"><path d="M16 2.45c0-.8-.65-1.45-1.45-1.45H1.45C.65 1 0 1.65 0 2.45v11.1C0 14.35.65 15 1.45 15h5.557v-1.5H1.5v-11h13V7H16V2.45z"></path><path d="M15.25 9.007a.75.75 0 0 1 .75.75v4.493a.75.75 0 0 1-.75.75H9.325a.75.75 0 0 1-.75-.75V9.757a.75.75 0 0 1 .75-.75h5.925z"></path></svg>
+            </span>
+          </button>
+
+          <button class="additional-controls__button tooltip tooltip--left" data-tooltip="Fullscreen">
+            <span>
+              <svg fill="currentColor" role="img" viewBox="0 0 16 16"><path d="M6.53 9.47a.75.75 0 0 1 0 1.06l-2.72 2.72h1.018a.75.75 0 0 1 0 1.5H1.25v-3.579a.75.75 0 0 1 1.5 0v1.018l2.72-2.72a.75.75 0 0 1 1.06 0zm2.94-2.94a.75.75 0 0 1 0-1.06l2.72-2.72h-1.018a.75.75 0 1 1 0-1.5h3.578v3.579a.75.75 0 0 1-1.5 0V3.81l-2.72 2.72a.75.75 0 0 1-1.06 0z"></path></svg>
+            </span>
+          </button>
+        </div>
+
+      </div>  
+
+      <div class="modal-create__overlay">
+          <div class="modal-create__content">
+            <div class="modal-create__top">
+              <h4 class="modal-create__title">
+                New Playlist
+              </h4>
+              <button class="aside-video__close" data-tooltip="Close" id="close-video">
+                <svg fill="currentColor" data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 16 16"><path d="M2.47 2.47a
+                  .75.75 0 0 1 1.06 0L8 6.94l4.47-4.47a.75.75 0 1 1 1.06 1.06L9.06 8l4.47 4.47a.75.75 0 1 1-1.06 1.06L8 9.06l-4.47 4.47a.75.75 0 0 1-1.06-1.06L6.94 8 2.47 3.53a.75.75 0 0 1 0-1.06Z"></path></svg>
+              </button>
+            </div>
+
+            <div class="modal-create__info">
+              <div class="modal-create__picture">
+                <img id="upload-image" src="/public/images/example2.jpeg" alt="Image Arcane">
+              </div>
+              
+              <div class="modal-create__inputs">
+                <div class="modal-create__input">
+                  <input type="text" placeholder="My playlist">
+                  <textarea placeholder="Add an additional description"></textarea>
+                </div>
+              </div>
+            </div>
+            
+            <button class="modal-create__btn-save">
+              Save
+            </button>
+          </div>
+      </div>
+
+      <div class="context-menu">
+        <button>Add to playlist</button>
+        <button>Share</button>
+      </div>
+
+    </div>
+
+  </body>
+</html>

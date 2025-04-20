@@ -1,0 +1,6 @@
+.main, .aside-playlists, .aside-video {
+  overflow-y: auto;
+  overflow-x: visible;
+  scrollbar-width: none;
+  scrollbar-color: transparent transparent;
+}

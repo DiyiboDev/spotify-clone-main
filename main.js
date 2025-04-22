@@ -20,7 +20,6 @@ function closeModalCreate() {
  
  import { $, $$ } from './utils/dom.js'
  import { CLASSES, DEVICES  } from './utils/contants.js'
-import { every } from 'underscore'
  
  const $video = $('video')
  

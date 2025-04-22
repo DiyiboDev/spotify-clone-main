@@ -122,19 +122,6 @@ $$('.playlist__song').forEach( el => el.addEventListener('contextmenu', (event) 
 
 }))
 
-document.addEventListener('contextmenu', (event) => {
-
-  const heightViewport = window.innerHeight
-  const currentClientY = event.clientY
-  const currentSizeContextMenu = $contextMenu.clientHeight
-
-  if(currentSizeContextMenu > (heightViewport - currentClientY)) {
-    console.log('no alcanza')
-  } else {
-    console.log('si alcanza');
-  }
-
-})
 
 document.addEventListener('click', () => {
   $contextMenu.style.display = 'none'
